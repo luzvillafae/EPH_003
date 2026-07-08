@@ -1,5 +1,6 @@
-
-
+#####################################################################################################################
+# Trabajamos con la EPH individuos - 4° trimestre de 2025
+#####################################################################################################################
 
 # Remover objetos del ambiente
 rm(list = ls())
@@ -14,11 +15,11 @@ library(gt)
 
 
 ###############################################
-###  1. BASE  y  PREGUNTA DE INVESTIGACION   ###
+### BASE  y  PREGUNTA DE INVESTIGACION   ###
 ###############################################
 
-#setwd("C:/Users/vzilli/Desktop/Diseños de Investigación/TP Itermedio")
-setwd ("C:/Users/luzmi/Documents/MAPP/DISEÑOS DE INVESTIGACION/TrabajoFinal")
+#setwd("...")
+setwd ("...")
 
 base <- read_excel("usu_individual_T425.xlsx")
 
@@ -65,7 +66,7 @@ base_analisis <- base_analisis %>%
 
 
 ###############################################
-### 2 - Análisis exploratorio y descriptivo ###
+###  Análisis exploratorio y descriptivo ###
 ###############################################
 
 # 1.
@@ -203,7 +204,10 @@ ggplot(base_analisis, aes(x = factor(sector_tipo), y = P21, fill = factor(sector
   theme_minimal()
 
 
-#######################3#adicional
+############################
+###### Adicionales ########
+#########################
+
 # --- 2. FILTRAR EL OUTLIER DE 15 MILLONES ---
 # Creamos una base nueva sin ese valor para comparar
 base_sin_outlier <- base_analisis %>% 
@@ -309,7 +313,7 @@ print(test_diferencia)
 
 ##############################
 # MATRIZ DE CORRELACION 
-#####
+###############################
 
 #PEQUEÑOS AJUSTES A LA VARIABLE EDUCACION.
 
