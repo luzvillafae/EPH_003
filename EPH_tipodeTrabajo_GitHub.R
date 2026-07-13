@@ -1,6 +1,6 @@
-#------------------------ DISEÑOS DE INVESTIGACIÓN ------------------------#
-#------------------------     MAPP UdeSA 2026      ------------------------#
-#------------------------      TP INTERMEDIO        ------------------------#
+#------------------------  ------------------------#
+#------------------------   ------------------------#
+#------------------------  ------------------------#
 
 
 # Remover objetos del ambiente
@@ -16,7 +16,7 @@ library(gt)
 
 
 ###############################################
-###  1. BASE  y  PREGUNTA DE INVESTIGACION   ###
+
 ###############################################
 
 #setwd("C:/Users/vzilli/Desktop/Diseños de Investigación/TP Itermedio")
@@ -67,7 +67,7 @@ base_analisis <- base_analisis %>%
 
 
 ###############################################
-### 2 - Análisis exploratorio y descriptivo ###
+### Análisis exploratorio y descriptivo ###
 ###############################################
 
 # 1.
@@ -206,7 +206,7 @@ ggplot(base_analisis, aes(x = factor(sector_tipo), y = P21, fill = factor(sector
 
 
 #######################3#adicional
-# --- 2. FILTRAR EL OUTLIER DE 15 MILLONES ---
+# ---FILTRAR EL OUTLIER DE 15 MILLONES ---
 # Creamos una base nueva sin ese valor para comparar
 base_sin_outlier <- base_analisis %>% 
   filter(P21 < 15000000)
